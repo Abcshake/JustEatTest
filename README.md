@@ -1,5 +1,5 @@
 # JustEatTest
-Unit Test for JustEatTest
+
 The following steps need to be done in order to run the test:
 
 Open Visual Studio code
