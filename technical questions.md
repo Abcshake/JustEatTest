@@ -16,4 +16,35 @@ Answer: One way to improve the customer experience on the Just Eat website is to
 
 5. Please describe yourself using JSON.
 
-Answer: From a testing perspective, QA analysts would use JSON to test API services. I would use a tool like Postman to send queries to a server using JSON to retrieve information. The response would also be in the JSON format which will be validated with expected results. 
+Answer: Example email in JSON format
+
+{
+
+    headers: [  # in an array since order matters
+        { name: 'Subject', value: 'An email' },
+        { name: 'Date',    value: 'Thu, 10 Dec 2019 21:00:32 -0800' },
+        { name: 'From',    value: 'avi@abc.com' },
+        { name: 'To',      value: 'paul@goo.com' }
+        { name: 'Sender',  value: 'paul@goo.com' }
+        { name: 'Reply-to', value: 'paul@goo.com' }
+    ],
+    from: 'From blah blah...',
+    body: {
+                id: 'partid-1',
+                type: 'text/plain',
+                sections: [
+                    {
+                        type: 'greeting',
+                        text: 'Dear Paul,'
+                    },
+                    {
+                        type: 'normal',
+                        text: 'How's it going',
+                    },
+                    {
+                        type: 'Signature',
+                        text: 'Yours, Avi'
+                    },
+                    
+           }
+  }
