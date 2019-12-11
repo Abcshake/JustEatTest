@@ -28,7 +28,7 @@ Answer: Example email in JSON format
         { name: 'Sender',  value: 'paul@goo.com' }
         { name: 'Reply-to', value: 'paul@goo.com' }
     ],
-    from: 'From blah blah...',
+    from: 'Avi',
     body: {
                 id: 'partid-1',
                 type: 'text/plain',
